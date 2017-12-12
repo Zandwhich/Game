@@ -1,9 +1,9 @@
-#ifndef OBJECT_H
-#define OBJECT_H
+#ifndef ABSTRACT_OBJECT_H
+#define ABSTRACT_OBJECT_H
 #include <string>
 class AbstractPlayer;
 
-class Object {
+class AbstractObject {
 
     /****************/
     /*    Fields    */
@@ -19,9 +19,9 @@ class Object {
     /* Constructors */
     /****************/
   public:
-    Object(const std::string& name, const double& value): name{name},
+    AbstractObject(const std::string& name, const double& value): name{name},
         value{value} {}
-    Object(const std::string& name): name{name}, value{0.0} {}
+    AbstractObject(const std::string& name): name{name}, value{0.0} {}
 
     /****************/
     /*    Methods   */
